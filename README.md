@@ -26,11 +26,16 @@ Software developer coding test for Onyx Commodities
 - Simple in-memory storage scheme
 - Basic CRUD endpoints
 - Annonymous health check endpoint in "/health" -> HTTP 200 OK
+
 - Uses in-header API Key authorization method for simplicity
   - Header: X-Api-Key
   - Key: d48b3f23c6094247a9eef315d856664e
+
 - GET "/products" endpoint allows filter products by color (as requested) and/or name
   - "/product?name=Shirt" -> returns all products named "Shirt" (case insensitive)
   - "/product?color=red" -> returns all products with color "red" (case insensitive)
   - "/product?name=hat&color=black" -> returns all products named "hat" AND color "black" (case insensitive)
+
 - Unit tests (repository) and integration tests (API)
+
+- Architecture diagram in "Architecture.png"
