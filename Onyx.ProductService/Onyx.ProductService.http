@@ -1,0 +1,31 @@
+@Onyx.ProductService_HostAddress = https://localhost:7274
+
+GET {{Onyx.ProductService_HostAddress}}/health
+Accept: application/json
+
+###
+
+GET {{Onyx.ProductService_HostAddress}}/products/
+Accept: application/json
+
+###
+
+POST {{Onyx.ProductService_HostAddress}}/products/
+Accept: application/json
+
+###
+
+GET {{Onyx.ProductService_HostAddress}}/products/{id}
+Accept: application/json
+
+###
+
+PUT {{Onyx.ProductService_HostAddress}}/products/{id}
+Accept: application/json
+
+###
+
+DELETE {{Onyx.ProductService_HostAddress}}/products/{id}
+Accept: application/json
+
+###
